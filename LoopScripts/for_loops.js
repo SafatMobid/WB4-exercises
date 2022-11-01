@@ -1,4 +1,4 @@
-let value = "I hate loops";
+let value = "0";
 let l;
 for (l = 0; l < 7; l++) 
 {
