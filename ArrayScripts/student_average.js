@@ -25,7 +25,7 @@ function getAverage(scores)
 
 for (let i=0; i < studentNum; i++)
 {
-    console.log(students[i].name);
+    console.log(students[i].name + ":");
     console.log (getAverage (students[i].scores));
 }
 
