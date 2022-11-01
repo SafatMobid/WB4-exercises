@@ -40,13 +40,47 @@ let academyMembers = [
 function getactorMovies(academyMembers)
    {
     let numfilm = academyMembers.length;
+    let lotmovies=[]
     
-    for (let i = 3; i < numfilm; i++)
+    for (let i = 0; i < numfilm; i++)
     {
-     if (academyMembers[i].films>=3)
+     if (academyMembers[i].films.length>=3)
      {
-         return academyMembers[i].name
+         lotmovies.push (academyMembers[i].name);
      }
      }
+     return lotmovies
     }
-    console.log ("The Actor in seat 187 is " + (getactorMovies(academyMembers)))
+    console.log ("Actor that been in more then three movie is " + (getactorMovies(academyMembers)))
+    //-----------------------------------------------------------------------------------------------------------------------------------------//
+    function getactorBob(academyMembers)
+    {
+     let numActor = academyMembers.length;
+     let actorBob=[]
+     
+     for (let i = 0; i < numActor; i++)
+     {
+      if ((academyMembers[i].name.indexOf("Bob")>=0))
+      {
+          actorBob.push (academyMembers[i].name);
+      }
+      }
+      return actorBob
+     }
+     console.log ("Actor with the name of " + (getactorBob(academyMembers)))
+     //--------------------------------------------------------------------------------------------------------------------------------------------//
+     function getmovieA(academyMembers)
+    {
+     let numMovie = academyMembers.length;
+     let movieA=[]
+     
+     for (let i = 0; i < numMovie; i++)
+     {
+      if ((academyMembers[i].films.length.indexOf(0,1)== "A"))
+      {
+          movieA.push (academyMembers[i].name);
+      }
+      }
+      return movieA
+     }
+     console.log ("Actor with the name of " + (getmovieA(academyMembers)))
