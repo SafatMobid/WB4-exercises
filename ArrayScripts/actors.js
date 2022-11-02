@@ -60,7 +60,7 @@ function getactorMovies(academyMembers)
      
      for (let i = 0; i < numActor; i++)
      {
-      if ((academyMembers[i].name.indexOf("Bob")>=0))
+      if ((academyMembers[i].name.indexOf("Bob")==0))
       {
           actorBob.push (academyMembers[i].name);
       }
@@ -72,15 +72,18 @@ function getactorMovies(academyMembers)
      function getmovieA(academyMembers)
     {
      let numMovie = academyMembers.length;
-     let movieA=[]
+     let actor=[]
      
      for (let i = 0; i < numMovie; i++)
      {
-      if ((academyMembers[i].films.length.indexOf(0,1)== "A"))
-      {
-          movieA.push (academyMembers[i].name);
-      }
-      }
-      return movieA
+        let films = academyMembers[i].films.length;
+        for (let f = 0; f < films; f++)
+            if ((academyMembers[i].films[f].indexOf("A")==0))
+                {
+                    actor.push (academyMembers[i].name);
+                    break
+                 }
      }
-     console.log ("Actor with the name of " + (getmovieA(academyMembers)))
+        return actor
+    }
+        console.log ("Actor with movies that start with A " + (getmovieA(academyMembers)))
