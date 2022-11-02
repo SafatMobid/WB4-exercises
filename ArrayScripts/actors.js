@@ -22,7 +22,7 @@ let academyMembers = [
     "Cowboy Boots"]
     },
    ];
-
+//------------------------------------------------------------------------------------------------------------------------------------------------//
    function getactormemId(academyMembers, member)
    {
     let numActors = academyMembers.length;
@@ -52,7 +52,7 @@ function getactorMovies(academyMembers)
      return lotmovies
     }
     console.log ("Actor that been in more then three movie is " + (getactorMovies(academyMembers)))
-    //-----------------------------------------------------------------------------------------------------------------------------------------//
+//-----------------------------------------------------------------------------------------------------------------------------------------//
     function getactorBob(academyMembers)
     {
      let numActor = academyMembers.length;
@@ -68,7 +68,7 @@ function getactorMovies(academyMembers)
       return actorBob
      }
      console.log ("Actor with the name of " + (getactorBob(academyMembers)))
-     //--------------------------------------------------------------------------------------------------------------------------------------------//
+//--------------------------------------------------------------------------------------------------------------------------------------------//
      function getmovieA(academyMembers)
     {
      let numMovie = academyMembers.length;
